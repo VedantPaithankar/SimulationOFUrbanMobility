@@ -17,10 +17,11 @@
 #include "lwip/sys.h"
 #include <lwip/netdb.h>
 
-#define PORT                        7000 
-#define KEEPALIVE_IDLE              5
-#define KEEPALIVE_INTERVAL          5
-#define KEEPALIVE_COUNT             5
+#define PORT                        7 
+#define KEEPALIVE_IDLE              50
+#define KEEPALIVE_INTERVAL          50
+#define KEEPALIVE_COUNT             50
+
 
 static const char *TAG_SERVER = "Server :";
 
