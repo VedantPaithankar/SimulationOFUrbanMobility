@@ -3,7 +3,7 @@
 void TcpServer::do_retransmit(const int sock)
 {
     int len;
-    char rx_buffer[128];
+    char rx_buffer[256];
 
     do {
         len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
